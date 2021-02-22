@@ -20,7 +20,7 @@ CLASSES = ["background", "aeroplane", "bicycle", "bird", "boat",
 
 COLORS = np.random.uniform(0, 255, size=(len(CLASSES), 3))
 
-net = cv2.dnn.readNetFromCaffe("MobileNetSSD_deploy.prototxt.txt",  "MobileNetSSD_deploy.caffemodel") 
+net = cv2.dnn.readNetFromCaffe("weights/MobileNetSSD_deploy.prototxt.txt",  "weights/MobileNetSSD_deploy.caffemodel") 
 
 #vs = VideoStream(src=2).start()
 vs = VideoStream(src=0).start()
